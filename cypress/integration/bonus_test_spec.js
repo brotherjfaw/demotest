@@ -4,12 +4,12 @@ describe("User Interacts with Automation Practice Site", () => {
     let dateTimeStamp = new Date().getTime()
 
     beforeEach(()=>{
-       // cy.visit("http://automationpractice.com/")
+        cy.visit("http://automationpractice.com/")
 
     })
 
     it("Basic Failed Search", ()=> { 
-        cy.visit("http://automationpractice.com/")
+        //cy.visit("http://automationpractice.com/")
         cy.get('#search_query_top').type('Ties')
         cy.get('#searchbox > .btn').click()
         cy.contains("0 results have been found.")
