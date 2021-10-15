@@ -8,20 +8,6 @@ Cypress is an automation testing framework that focuses on performing end-to-end
 
 Check out cypress.io for a detailed history. 
 
-ENVIRONMENT VARIABLES
-We use environment variables to set sensitive data in variables we use in our tests or to set the environment which the tests will run on. Those variables need to be set in the `cypress.env.json` file at the root level of the project. At the moment when adding this, the structure looks like the one bellow. Feel free to copy and fill in the values that correspond to the environment you want to execute the tests on (QA, DEV, Int, local, etc.)
-p.s. the `cypress.env.json` file was added to the gitingore file, so it will not be pushed to this repo. You can update it the way you like.
-
-{
-    "alumni_base_url": "the_env_specific_alumni_base_url",
-    "catalog_base_url": "the_env_specific_catalog_base_url",
-    "chargebee_key": "env_specific_chargebee_authorisation_secret_key",
-    "user": {
-        "email": "jfaw+cypress_cmd@k2p.com"
-    },
-    "existing_product_keys": ["2020-online-cv-br"]
-}
-
 
 KEY POINTS: 
 
